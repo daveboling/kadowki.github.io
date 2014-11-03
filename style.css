@@ -1,3 +1,41 @@
-body {
-  font-size: 20px;
+body,
+html {
+  margin: 0px;
+  height: 100%;
+}
+/*----------------------------------------
+TAG BOOTSTRAP OVERRIDES
+------------------------------------------*/
+/*----------------------------------------
+TAG FOOTER JADE
+------------------------------------------*/
+#footer {
+  padding: 5px;
+  text-align: center;
+  height: 155px;
+  /* '.push' must be the same height as 'footer' */
+}
+#footer .socialMedia {
+  display: inline-block;
+  padding: 10px;
+  margin-right: 12px;
+  color: white;
+}
+#footer .socialMedia i:hover {
+  color: rgba(211, 211, 211, 0.6);
+  cursor: pointer;
+}
+#copyright {
+  font-size: 1.2em;
+  text-align: center;
+}
+.container-fluid {
+  min-height: 100%;
+  margin: 0 auto -155px;
+  /* the bottom margin is the negative value of the footer's height */
+}
+.container-fluid:after {
+  content: "";
+  display: block;
+  height: 155px;
 }

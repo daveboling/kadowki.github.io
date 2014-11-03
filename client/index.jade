@@ -4,16 +4,16 @@ head
   meta(charset="UTF-8")
   title David D. Boling
   link(rel="stylesheet", href="bower_components/bootstrap/dist/css/bootstrap.min.css")
+  link(rel="stylesheet", href="bower_components/fontawesome/css/font-awesome.css")
   link(rel="stylesheet", href="style.css")
-  link(rel="stylesheet", href="home.css")
 body
+  include nav.jade
   .container-fluid
     .row
       .col-xs-12
         //Angular View
         #content(ng-view)
-
-
+  include footer/footer.jade
 
 //Project Dependencies
 script(src='bower_components/angular/angular.js')

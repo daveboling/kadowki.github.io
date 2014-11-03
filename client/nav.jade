@@ -1,4 +1,15 @@
-.row
-  .col-xs-6
-     
-  .col-xs-6
+.navbar.navbar-default(role='navigation')
+  .container#navigation
+    .navbar-header
+      button.navbar-toggle(data-toggle='collapse', data-target='#bs-navbar-collapse')
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      .navbar-brand David D. Boling
+
+    .collapse.navbar-collapse#bs-navbar-collapse
+      ul.nav.navbar-nav.navbar-right
+        li: a(href='/#/') Contact
+        li: a(href='/#/portfolio') Portfolio
+        li: a(href='/#/blog') Blog
