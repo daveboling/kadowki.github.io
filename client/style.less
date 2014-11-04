@@ -11,6 +11,14 @@ html, body {
 }
 
 /*----------------------------------------
+TAG BOOTSTRAP OVERRIDES
+------------------------------------------*/
+
+.container-fluid {
+  height: 100%;
+}
+
+/*----------------------------------------
 TAG HEADERS
 ------------------------------------------*/
 h1, h2 {
@@ -76,12 +84,8 @@ TAG SEPARATORS
 }
 
 /*----------------------------------------
-TAG HOME PAGE
+TAG CONTENT CONTROL
 ------------------------------------------*/
-.container-fluid {
-  height: 100%;
-}
-
 .center-content {
   font-size: 16px;
   font-weight: bold;
@@ -89,7 +93,9 @@ TAG HOME PAGE
   color: black;
   text-align: center;
 }
-
+/*----------------------------------------
+TAG HOME PAGE
+------------------------------------------*/
 #home {
   height: 100%;
   background-image: url("assets/images/promo.jpg");
@@ -118,10 +124,16 @@ TAG HOME PAGE
 
 #portfolio {
   height: 100%;
-  background-image: url("assets/images/promo.jpg");
+  background-image: url("assets/images/promo2.jpg");
   background-position: center;
   background-size: cover;
   padding-top: 50px;
+}
+
+#contact {
+  height: 100%;
+  min-height: 500px;
+  padding-top: 100px;
 }
 
 /*----------------------------------------
