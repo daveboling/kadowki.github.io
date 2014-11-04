@@ -3,23 +3,27 @@ html(lang="en" ng-app='dave')
 head
   meta(charset="UTF-8")
   title David D. Boling
+  meta(charset='UTF-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1')
   link(rel="stylesheet", href="bower_components/bootstrap/dist/css/bootstrap.min.css")
   link(rel="stylesheet", href="bower_components/fontawesome/css/font-awesome.css")
+  link(rel='stylesheet', href='bower_components/slicknav/slicknav.css')
   link(rel="stylesheet", href="style.css")
-body
-  include nav.jade
-  .container-fluid
-    .row
-      .col-xs-12
-        //Angular View
-        #content(ng-view)
+include nav.jade
+body(ng-controller='IndexCtrl')
+  //Angular View 
+  .container-fluid.page-wrap(ng-view)
   include footer/footer.jade
 
 //Project Dependencies
 script(src='bower_components/angular/angular.js')
 script(src='bower_components/angular-route/angular-route.min.js')
 script(src='bower_components/jquery/dist/jquery.js')
+script(src='bower_components/slicknav/jquery.slicknav.min.js')
 script(src='bower_components/bootstrap/dist/js/bootstrap.min.js')
+
+//Custom JavaScript
+script(src='assets/js/app.js')
 
 //Angular Files
 script(src='index.js')

@@ -1,4 +1,25 @@
-.navbar.navbar-default(role='navigation')
+// Nav 
+.row-fluid.nav-static.fixed
+  .col-xs-6
+    p David D. Boling
+  .col-xs-2
+    a(href='' ng-click='scrollTo("home")') Home
+  .col-xs-2
+    a(href='' ng-click='scrollTo("portfolio")') Portfolio
+  .col-xs-2
+    a(href='' ng-click='scrollTo("contact")') Contact
+//Slick Nav 
+ul.navMenu.fixed
+  li
+    a(href='#home') Home
+  li
+    a(href='#portfolio') Portfolfio
+  li
+    a(href='#contact') Contact
+
+
+//
+ .navbar.navbar-default(role='navigation')
   .container#navigation
     .navbar-header
       button.navbar-toggle(data-toggle='collapse', data-target='#bs-navbar-collapse')
