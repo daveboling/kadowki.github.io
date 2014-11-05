@@ -15,7 +15,12 @@
     };
 
     //run initial slider
-    $scope.slider();
+    window.onload = function(){
+      var waiter = setTimeout(function(){
+       $scope.slider(); 
+       console.log('it loaded');
+      }, 500);
+    };
 
   }]);
 })();
