@@ -101,6 +101,11 @@ TAG NAVBAR
   .nav-static {
     display: none;
   }
+  //LINKS INSIDE OF PORTFOLIO.JADE
+  .weblinks a {
+    font-size: 1em;
+    display: block;
+  }
 }
 
 .navMenu {
@@ -113,11 +118,13 @@ TAG NAVBAR
   top: 0;
   z-index: 1;
 }
+
 @media (max-width: 40rem) {
   .slicknav_menu {
     display: block;
     width: 100%;
   }
+
 }
 
 .fixed {
@@ -154,7 +161,7 @@ TAG HOME PAGE
 ------------------------------------------*/
 #home {
   height: 100%;
-  background-image: url("assets/images/promo.jpg");
+  background-image: url("assets/images/promo1.jpg");
   background-position: center;
   background-size: cover;
   padding-top: 50px;
@@ -204,6 +211,18 @@ TAG HOME PAGE
   z-index: 2;
 }
 
+#contact {
+  height: 100%;
+  background-image: url("assets/images/promo3.jpeg");
+  background-position: center;
+  background-size: cover;
+  padding-top: 50px;
+  position: relative;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  z-index: 2;
+}
+
 .shroud {
   height: 100%;
   width: 100%;
@@ -220,13 +239,13 @@ TAG HOME PAGE
 #slider {
   font-size: 1.2em;
   height: 100%;
-  border: 1px solid white;
   color: white;
   font-family: @Oswald;
 
   .photo {
     height: 300px;
     text-align: center;
+    margin-bottom: 15px;
   }
 
   .photo .photoItem {
@@ -251,12 +270,29 @@ TAG HOME PAGE
     font-size: 1.8em;
   }
 
-  .photo {
+  .weblinks {
+    text-align: center;
 
+    a {
+      text-decoration: none;
+      color: white;
+      padding: 10px;
+      margin-left:50px;
+      font-size: 1.5em;
+      color: rgba(255, 152, 0, 0.6);
+    }
+
+    a:hover{
+      transition: 0.30s;
+      color: rgba(255, 152, 0, 1);
+      background-color: rgba(0, 0, 0, 0.5);
+    }
   }
 
   .description {
-
+    font-size: 1.2em;
+    padding: 30px;
+    margin-bottom: 10px;
 
   }
 }

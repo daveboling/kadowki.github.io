@@ -84,6 +84,10 @@ TAG NAVBAR
   .nav-static {
     display: none;
   }
+  .weblinks a {
+    font-size: 1em;
+    display: block;
+  }
 }
 .navMenu {
   display: none;
@@ -130,7 +134,7 @@ TAG HOME PAGE
 ------------------------------------------*/
 #home {
   height: 100%;
-  background-image: url("assets/images/promo.jpg");
+  background-image: url("assets/images/promo1.jpg");
   background-position: center;
   background-size: cover;
   padding-top: 50px;
@@ -176,6 +180,17 @@ TAG HOME PAGE
   border-top: 1px solid white;
   z-index: 2;
 }
+#contact {
+  height: 100%;
+  background-image: url("assets/images/promo3.jpeg");
+  background-position: center;
+  background-size: cover;
+  padding-top: 50px;
+  position: relative;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  z-index: 2;
+}
 .shroud {
   height: 100%;
   width: 100%;
@@ -190,13 +205,13 @@ TAG HOME PAGE
 #slider {
   font-size: 1.2em;
   height: 100%;
-  border: 1px solid white;
   color: white;
   font-family: 'Oswald', 'Arial';
 }
 #slider .photo {
   height: 300px;
   text-align: center;
+  margin-bottom: 15px;
 }
 #slider .photo .photoItem {
   height: 100%;
@@ -225,6 +240,27 @@ TAG HOME PAGE
 }
 #slider .sHeader2 {
   font-size: 1.8em;
+}
+#slider .weblinks {
+  text-align: center;
+}
+#slider .weblinks a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  margin-left: 50px;
+  font-size: 1.5em;
+  color: rgba(255, 152, 0, 0.6);
+}
+#slider .weblinks a:hover {
+  transition: 0.30s;
+  color: #ff9800;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#slider .description {
+  font-size: 1.2em;
+  padding: 30px;
+  margin-bottom: 10px;
 }
 /*----------------------------------------
 TAG FOOTER JADE
