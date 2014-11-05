@@ -10,13 +10,15 @@
         infinite: true,
         speed: 300,
         slidesToShow: 1,
-        adaptiveHeight: true
+        adaptiveHeight: true,
+        autoplay: true,
+        autoplaySpeed: 5000
       });
     };
 
     //run initial slider
     var waiter = setTimeout(function(){
-     $scope.slider(); 
+     $scope.slider();
      clearTimeout(waiter);
     }, 500);
 
