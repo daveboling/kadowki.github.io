@@ -15,7 +15,9 @@
     };
 
     //run initial slider
-    $scope.slider();
+    window.onload = function(){
+      $scope.slider();
+    };
 
   }]);
 })();
