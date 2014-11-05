@@ -15,12 +15,11 @@
     };
 
     //run initial slider
-    window.onload = function(){
-      var waiter = setTimeout(function(){
-       $scope.slider(); 
-       console.log('it loaded');
-      }, 500);
-    };
+    var waiter = setTimeout(function(){
+     $scope.slider(); 
+     clearTimeout(waiter);
+    }, 500);
+
 
   }]);
 })();
