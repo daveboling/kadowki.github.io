@@ -119,7 +119,7 @@ TAG SEPARATORS
 TAG CONTENT CONTROL
 ------------------------------------------*/
 .center-content {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: bold;
   font-family: "League";
   color: white;
@@ -168,10 +168,10 @@ TAG HOME PAGE
   z-index: 2;
 }
 #portfolio {
-  height: 100%;
+  min-height: 500px;
   background-image: url("assets/images/bg-1.png");
   background-repeat: repeat;
-  padding-top: 50px;
+  padding: 50px 20px 20px 20px;
   border-bottom: 1px solid white;
   border-top: 1px solid white;
   z-index: 2;
@@ -186,6 +186,45 @@ TAG HOME PAGE
   bottom: 0;
   left: 0;
   z-index: 1;
+}
+#slider {
+  font-size: 1.2em;
+  height: 100%;
+  border: 1px solid white;
+  color: white;
+  font-family: 'Oswald', 'Arial';
+}
+#slider .photo {
+  height: 300px;
+  text-align: center;
+}
+#slider .photo .photoItem {
+  height: 100%;
+  width: 45%;
+  margin-right: 10px;
+  display: inline-block;
+  background-position: center;
+  background-size: cover;
+}
+#slider .title {
+  text-align: center;
+}
+#slider .sHeader1 {
+  font-size: 2.5em;
+  -webkit-stroke-width: 5.3px;
+  -webkit-stroke-color: #FFFFFF;
+  -webkit-fill-color: #FFFFFF;
+  text-shadow: 1px 0px 20px white;
+  -webkit-transition: width 0.3s;
+  /*Safari & Chrome*/
+  transition: width 0.3s;
+  -moz-transition: width 0.3s;
+  /* Firefox 4 */
+  -o-transition: width 0.3s;
+  /* Opera */
+}
+#slider .sHeader2 {
+  font-size: 1.8em;
 }
 /*----------------------------------------
 TAG FOOTER JADE
@@ -239,6 +278,3 @@ TAG TYPESCRIPT
 .bg {
   font-size: 3em;
 }
-/*----------------------------------------
-TAG PORTFOLIO
-------------------------------------------*/

@@ -6,20 +6,7 @@
     | Need a Full Stack Developer? Just ask.
 
 //Portfolio
-#portfolio.row(name='portfolio')
-  .col-xs-12
-    p.center-content Portfolio
-    #slider.slidePlz
-      .s-content 1
-      .s-content 2
-      .s-content 3
-
-script.
-  $(document).ready(function(){
-    $('#slider.slidePlz').owlCarousel();
-  });
-
-
+include portfolio.jade
 
 //Experience
 include experience.jade
