@@ -1,10 +1,28 @@
+//Top Home
 #home.row(name='home')
   .promo_samples
-    | David D. Boling - Full Stack Developr? Just add water.
+    span.glow.bg David D. Boling
+    br
+    | Need a Full Stack Developer? Just ask.
+
+//Portfolio
 #portfolio.row(name='portfolio')
   .col-xs-12
-    p.center-content Stuff           
-#contact.row(name='contact')
-  .col-sm-12
-    p.center-content Experience
+    p.center-content Portfolio
+    #slider.slidePlz
+      .s-content 1
+      .s-content 2
+      .s-content 3
+
+script.
+  $(document).ready(function(){
+    $('#slider.slidePlz').owlCarousel();
+  });
+
+
+
+//Experience
+include experience.jade
+
+//Footer
 include ../footer/footer.jade

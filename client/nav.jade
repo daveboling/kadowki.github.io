@@ -1,18 +1,20 @@
-// Nav 
+//Nav 
 .row-fluid.nav-static.fixed
   .col-xs-6
-    p David D. Boling
-  .col-xs-2
-    a(href='' ng-click='scrollTo("home")') Home
-  .col-xs-2
-    a(href='' ng-click='scrollTo("portfolio")') Portfolio
-  .col-xs-2
-    a(href='' ng-click='scrollTo("contact")') Contact
-//Slick Nav 
+    .col-xs-3
+      .middle: a(href='' ng-click='scrollTo("contact")') CONTACT
+    .col-xs-3
+      .middle: a(href='' ng-click='scrollTo("experience")') EXPERIENCE
+    .col-xs-3
+  .col-xs-6
+    .col-xs-6
+    .col-xs-3
+      .middle: a(href='' ng-click='scrollTo("portfolio")') PORTFOLIO
+    .col-xs-3
+      .middle: a(href='' ng-click='scrollTo("blog")') BLOG
+//Slick Nav
 ul.navMenu.fixed
   li
-    a(href='#home') Home
+    a(href='' ng-click='scrollTo("portfolio")') Portfolio
   li
-    a(href='#portfolio') Portfolfio
-  li
-    a(href='#contact') Contact
+    a(href='' ng-click='scrollTo("contact")') Contact
