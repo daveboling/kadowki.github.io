@@ -1,2 +1,15 @@
 #contact.row(name='contact')
   .col-xs-12.shroud
+    .contactForms
+      .contact_head YES, I AM FOR HIRE.
+      .form.white
+        .centered
+          form(name='requestForm')
+            label Name:
+            input.cust_name(name='name', placeholder='Enter your name here')
+            label E-Mail:
+            input.email_name(name='email', placeholder='you@gmail.com')
+            label Phone:
+            input.phone(placeholder='555-555-5555')
+            textarea.message(name='message', placeholder="What's up?")
+            button(style='display:block').send Send
