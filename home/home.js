@@ -3,17 +3,25 @@
   var home = angular.module('dave');
 
   home.controller('HomeCtrl', ['$scope', function($scope){
-
+    var slider = $('#slider');
     $scope.slider = function(){
-      $('#slider').slick({
+      slider.slick({
         dots: true,
         infinite: true,
         speed: 300,
         slidesToShow: 1,
         adaptiveHeight: true,
         autoplay: true,
-        autoplaySpeed: 5000
+        autoplaySpeed: 6000
       });
+    };
+
+    $scope.sliderNext = function(){
+      slider.slickNext();
+    };
+
+    $scope.sliderPrev = function(){
+      slider.slickPrev();
     };
 
     //run initial slider
