@@ -80,15 +80,6 @@ TAG NAVBAR
   color: rgba(0, 0, 0, 0.8);
   background-color: rgba(255, 255, 255, 0.8);
 }
-@media (max-width: 40rem) {
-  .nav-static {
-    display: none;
-  }
-  .weblinks a {
-    font-size: 1em;
-    display: block;
-  }
-}
 .navMenu {
   display: none;
 }
@@ -97,12 +88,6 @@ TAG NAVBAR
   position: fixed;
   top: 0;
   z-index: 1;
-}
-@media (max-width: 40rem) {
-  .slicknav_menu {
-    display: block;
-    width: 100%;
-  }
 }
 .fixed {
   position: fixed;

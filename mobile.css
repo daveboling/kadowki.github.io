@@ -1,0 +1,62 @@
+@media (max-width: 640px) {
+  .nav-static {
+    display: none;
+  }
+  .slicknav_menu {
+    z-index: 999;
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid white;
+  }
+  #home .promo_samples {
+    font-size: 1.2em;
+  }
+  #experience .icon {
+    font-size: 1.3em;
+  }
+  #experience .skillDescription {
+    font-size: 1em;
+  }
+  #slider {
+    font-size: 1em;
+    width: 100%;
+  }
+  #slider .photo {
+    height: 150px;
+    margin-bottom: 5px;
+  }
+  #slider .photo .photoItem {
+    margin-right: 5px;
+  }
+  #slider .sHeader1 {
+    font-size: 1.4em;
+  }
+  #slider .sHeader2 {
+    font-size: 1em;
+  }
+  #slider .weblinks a {
+    font-size: 1em;
+    display: block;
+    margin-left: 0px;
+    padding: 5px;
+  }
+  #slider .description {
+    font-size: 1em;
+  }
+  #copyright {
+    font-size: 1em;
+  }
+  #footer {
+    height: 75px;
+  }
+  .container-fluid {
+    margin: 0 auto -75px;
+    /* the bottom margin is the negative value of the footer's height */
+  }
+  .container-fluid:after {
+    height: 75px;
+  }
+  .contactForms {
+    width: 100%;
+  }
+}
