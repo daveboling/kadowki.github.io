@@ -60,13 +60,8 @@
     width: 100%;
   }
 }
-@media (max-width: 1040px) {
-  #experience {
-    height: 110%;
-  }
-}
 @media (max-width: 840px) {
   #experience {
-    height: 185%;
+    height: 1150px;
   }
 }
