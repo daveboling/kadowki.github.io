@@ -2,7 +2,9 @@
   'use strict';
   var home = angular.module('dave');
 
-  home.controller('HomeCtrl', ['$scope', function($scope){
+  home.controller('HomeCtrl', ['$scope', '$http', function($scope, $http){
+    $scope.email = {name:'', email:'', body:'', phone:''};
+
     var slider = $('#slider');
     $scope.slider = function(){
       slider.slick({
@@ -31,6 +33,16 @@
      $scope.slider();
      clearTimeout(waiter);
     }, 500);
+
+
+    $scope.sendMail = function(){
+      return $http.post('http://api.daviddboling.com/sendMail', $scope.email).then(function(res){
+        $scope.email = {name:'', email:'', body:'', phone:''};
+        console.log('success');
+      },function(res){
+        console.log('failure');
+      });
+    };
 
 
   }]);
