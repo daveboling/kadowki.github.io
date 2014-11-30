@@ -1,3 +1,4 @@
+/* global alertify */
 (function(){
   'use strict';
   var home = angular.module('dave');
@@ -38,9 +39,9 @@
     $scope.sendMail = function(){
       return $http.post('http://api.daviddboling.com/sendMail', $scope.email).then(function(res){
         $scope.email = {name:'', email:'', body:'', phone:''};
-        console.log('success');
+        alertify.log('Thank you for reaching out to me! Expect a response as soon as possible!');
       },function(res){
-        console.log('failure');
+        alertify.error('Sorry, something went wrong! Please try again.');
       });
     };
 
