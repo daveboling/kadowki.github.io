@@ -17,31 +17,38 @@
   #experience .skillDescription {
     font-size: 1em;
   }
-  #slider {
+  .featureOne,
+  .featureTwo,
+  .featureThree {
+    height: 715px;
+  }
+  .featureOne .photo .photoItem,
+  .featureTwo .photo .photoItem,
+  .featureThree .photo .photoItem {
+    height: 70px;
+    width: 120px;
+  }
+  .featureOne .title,
+  .featureTwo .title,
+  .featureThree .title {
+    text-align: center;
+    font-size: 1.5em;
+  }
+  .featureOne .sHeader1,
+  .featureTwo .sHeader1,
+  .featureThree .sHeader1 {
+    font-size: 1.2em;
+  }
+  .featureOne .weblinks a,
+  .featureTwo .weblinks a,
+  .featureThree .weblinks a {
     font-size: 1em;
-    width: 100%;
+    margin-left: 2px;
   }
-  #slider .photo {
-    height: 150px;
-    margin-bottom: 5px;
-  }
-  #slider .photo .photoItem {
-    margin-right: 5px;
-  }
-  #slider .sHeader1 {
-    font-size: 1.4em;
-  }
-  #slider .sHeader2 {
-    font-size: 1em;
-  }
-  #slider .weblinks a {
-    font-size: 1em;
-    display: block;
-    margin-left: 0px;
-    padding: 5px;
-  }
-  #slider .description {
-    font-size: 1em;
+  .featureOne .description,
+  .featureTwo .description,
+  .featureThree .description {
+    font-size: 1.2em;
   }
   #copyright {
     font-size: 1em;
@@ -63,6 +70,17 @@
 @media (max-width: 840px) {
   #experience {
     height: 1150px;
+  }
+  .featureOne,
+  .featureTwo,
+  .featureThree {
+    height: 715px;
+  }
+  .featureOne .photo .photoItem,
+  .featureTwo .photo .photoItem,
+  .featureThree .photo .photoItem {
+    height: 70px;
+    width: 120px;
   }
   .nav-static a {
     padding: 15px 2px 15px 2px;

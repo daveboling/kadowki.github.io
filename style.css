@@ -359,8 +359,7 @@ TAG FEATURED PROJECTS
 .featureOne,
 .featureTwo,
 .featureThree {
-  height: 700px;
-  min-height: 700px;
+  height: 805px;
   background-image: url("assets/images/promo1.jpg");
   background-position: top;
   background-size: cover;
@@ -400,7 +399,7 @@ TAG FEATURED PROJECTS
 .featureTwo .title,
 .featureThree .title {
   text-align: center;
-  font-size: 3em;
+  font-size: 1.5em;
 }
 .featureOne .sHeader1,
 .featureTwo .sHeader1,
@@ -460,6 +459,7 @@ TAG FEATURED PROJECTS
   background-color: black;
 }
 .featureOne {
+  height: 850px;
   background-image: url("assets/images/knipit/k.png");
 }
 .featureTwo {
