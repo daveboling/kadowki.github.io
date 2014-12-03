@@ -72,8 +72,6 @@ TAG NAVBAR
   color: white;
   text-decoration: none;
   padding: 15px 25px 15px 25px;
-  border-left: 1px solid rgba(255, 255, 255, 0.4);
-  border-right: 1px solid rgba(255, 255, 255, 0.4);
 }
 .nav-static a:hover {
   transition: 0.25s;
@@ -178,6 +176,7 @@ TAG HOME PAGE
   font-family: 'Oswald', 'Arial';
 }
 #portfolio {
+  height: 100%;
   min-height: 500px;
   background-image: url("assets/images/bg-1.png");
   background-repeat: repeat;
@@ -207,68 +206,6 @@ TAG HOME PAGE
   bottom: 0;
   left: 0;
   z-index: 1;
-}
-#slider {
-  font-size: 1.2em;
-  height: 100%;
-  width: 80%;
-  margin: 0px auto;
-  color: white;
-  font-family: 'Oswald', 'Arial';
-}
-#slider .photo {
-  height: 300px;
-  text-align: center;
-  margin-bottom: 15px;
-}
-#slider .photo .photoItem {
-  height: 100%;
-  width: 45%;
-  margin-right: 10px;
-  display: inline-block;
-  background-position: center;
-  background-size: cover;
-}
-#slider .title {
-  text-align: center;
-}
-#slider .sHeader1 {
-  font-size: 2.5em;
-  -webkit-stroke-width: 5.3px;
-  -webkit-stroke-color: #FFFFFF;
-  -webkit-fill-color: #FFFFFF;
-  text-shadow: 1px 0px 20px white;
-  -webkit-transition: width 0.3s;
-  /*Safari & Chrome*/
-  transition: width 0.3s;
-  -moz-transition: width 0.3s;
-  /* Firefox 4 */
-  -o-transition: width 0.3s;
-  /* Opera */
-}
-#slider .sHeader2 {
-  font-size: 1.8em;
-}
-#slider .weblinks {
-  text-align: center;
-}
-#slider .weblinks a {
-  text-decoration: none;
-  color: white;
-  padding: 10px;
-  margin-left: 50px;
-  font-size: 1.5em;
-  color: rgba(255, 152, 0, 0.6);
-}
-#slider .weblinks a:hover {
-  transition: 0.30s;
-  color: #ff9800;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-#slider .description {
-  font-size: 1.2em;
-  padding: 30px;
-  margin-bottom: 10px;
 }
 /*----------------------------------------
 TAG FOOTER JADE
@@ -415,4 +352,119 @@ form label {
   height: 100px;
   margin-top: 10px;
   resize: none;
+}
+/*----------------------------------------
+TAG FEATURED PROJECTS
+------------------------------------------*/
+.featureOne,
+.featureTwo,
+.featureThree {
+  height: 100%;
+  min-height: 700px;
+  background-image: url("assets/images/promo1.jpg");
+  background-position: top;
+  background-size: cover;
+  padding-top: 50px;
+  z-index: 2;
+  color: white;
+  font-family: 'Oswald', 'Arial';
+  position: relative;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+.featureOne .photo,
+.featureTwo .photo,
+.featureThree .photo {
+  height: 300px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.featureOne .photo .photoItem,
+.featureTwo .photo .photoItem,
+.featureThree .photo .photoItem {
+  height: 200px;
+  width: 270px;
+  margin-right: 10px;
+  display: inline-block;
+  background-position: center;
+  background-size: cover;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+}
+.featureOne .photo .photoItem:hover,
+.featureTwo .photo .photoItem:hover,
+.featureThree .photo .photoItem:hover {
+  transition: 0.2s;
+  border: 3px solid rgba(255, 255, 255, 0.6);
+}
+.featureOne .title,
+.featureTwo .title,
+.featureThree .title {
+  text-align: center;
+  font-size: 3em;
+}
+.featureOne .sHeader1,
+.featureTwo .sHeader1,
+.featureThree .sHeader1 {
+  font-size: 2.5em;
+  text-align: center;
+  -webkit-stroke-width: 5.3px;
+  -webkit-stroke-color: #FFFFFF;
+  -webkit-fill-color: #FFFFFF;
+  text-shadow: 1px 0px 20px white;
+  -webkit-transition: width 0.3s;
+  /*Safari & Chrome*/
+  transition: width 0.3s;
+  -moz-transition: width 0.3s;
+  /* Firefox 4 */
+  -o-transition: width 0.3s;
+  /* Opera */
+}
+.featureOne .sHeader2,
+.featureTwo .sHeader2,
+.featureThree .sHeader2 {
+  font-size: 1.8em;
+}
+.featureOne .weblinks,
+.featureTwo .weblinks,
+.featureThree .weblinks {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.featureOne .weblinks a,
+.featureTwo .weblinks a,
+.featureThree .weblinks a {
+  text-decoration: none;
+  color: white;
+  padding-right: 10px;
+  margin-left: 50px;
+  font-size: 1.6em;
+  color: rgba(255, 152, 0, 0.6);
+}
+.featureOne .weblinks a:hover,
+.featureTwo .weblinks a:hover,
+.featureThree .weblinks a:hover {
+  transition: 0.30s;
+  color: #ff9800;
+}
+.featureOne .description,
+.featureTwo .description,
+.featureThree .description {
+  font-size: 1.5em;
+  padding: 30px;
+  margin-bottom: 10px;
+}
+.featureOne .backdrop,
+.featureTwo .backdrop,
+.featureThree .backdrop {
+  background-color: black;
+}
+.featureOne {
+  background-image: url("assets/images/knipit/s1.png");
+}
+.featureTwo {
+  background-image: url("assets/images/gravity-flip/s1.png");
+}
+.featureThree {
+  background-image: url("assets/images/hipsterbay/1.png");
 }
