@@ -359,7 +359,7 @@ TAG FEATURED PROJECTS
 .featureOne,
 .featureTwo,
 .featureThree {
-  height: 100%;
+  height: 700px;
   min-height: 700px;
   background-image: url("assets/images/promo1.jpg");
   background-position: top;
@@ -460,11 +460,11 @@ TAG FEATURED PROJECTS
   background-color: black;
 }
 .featureOne {
-  background-image: url("assets/images/knipit/s1.png");
+  background-image: url("assets/images/knipit/k.png");
 }
 .featureTwo {
-  background-image: url("assets/images/gravity-flip/s1.png");
+  background-image: url("assets/images/gravity-flip/s0.png");
 }
 .featureThree {
-  background-image: url("assets/images/hipsterbay/1.png");
+  background-image: url("assets/images/hipsterbay/hip.png");
 }

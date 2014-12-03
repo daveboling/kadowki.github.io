@@ -1,11 +1,8 @@
 $(document).ready(function(){
-  'use strict';
-
+'use strict';
   //Slicknav
   $('.navMenu').slicknav({
-    label: '',
-    duration: 500
+  label: '',
+  duration: 500
   });
-
 });
-
