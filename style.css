@@ -171,9 +171,27 @@ TAG HOME PAGE
   /* Opera */
 }
 #experience .skillDescription {
-  font-size: 1.2em;
+  font-size: 1.5em;
   line-height: 30px;
   font-family: 'Oswald', 'Arial';
+  text-align: center;
+}
+#experience .self-portrait {
+  width: 50%;
+  border-radius: 100%;
+  border: 3px solid white;
+  margin: 0 auto;
+}
+#experience .bigSocial {
+  display: inline;
+  margin: 0px 50px 0px 50px;
+}
+#experience .bigSocial a {
+  color: #e67e22;
+}
+#experience .bigSocial i:hover {
+  color: #d35400;
+  cursor: pointer;
 }
 #portfolio {
   height: 100%;
@@ -260,31 +278,15 @@ TAG TYPESCRIPT
   font-size: 3em;
 }
 /*----------------------------------------
-TAG EXPERIENCE BARS
+TAG ICONS
 ------------------------------------------*/
-.progressbar {
-  height: 26px;
-  color: white;
-  width: 100%;
-  margin-bottom: 20px;
-  background: #696969;
-  border-radius: 10px;
+.xp_icon {
+  height: 64px;
+  width: 64px;
+  margin: 10px;
 }
-.skill {
-  transition: all 500ms ease;
-  height: 20px;
-  border-radius: 10px;
-  background: #000;
-  position: absolute;
-  margin: 3px;
-  background-color: rgba(255, 223, 0, 0.6);
-  display: inline-block;
-}
-.skillHeader {
-  font-family: 'Oswald', 'Arial';
-  color: black;
-  text-align: left;
-  margin-left: 20px;
+.xp_icon_set {
+  text-align: center;
 }
 /*----------------------------------------
 TAG CONTACT FORM
