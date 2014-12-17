@@ -205,6 +205,7 @@ TAG HOME PAGE
 }
 #contact {
   height: 100%;
+  min-height: 500px;
   background-image: url("assets/images/promo3.jpeg");
   background-position: center;
   background-size: cover;
@@ -229,10 +230,9 @@ TAG HOME PAGE
 TAG FOOTER JADE
 ------------------------------------------*/
 #footer {
-  padding: 5px;
   text-align: center;
-  height: 155px;
-  /* '.push' must be the same height as 'footer' */
+  background-color: #000f23;
+  padding: 10px;
 }
 #footer .socialMedia {
   display: inline-block;
@@ -244,20 +244,23 @@ TAG FOOTER JADE
   color: rgba(211, 211, 211, 0.6);
   cursor: pointer;
 }
-#copyright {
+#footer #copyright {
   font-size: 1.2em;
   text-align: center;
+  color: white;
 }
+/*
 .container-fluid {
-  min-height: 100%;
-  margin: 0 auto -155px;
-  /* the bottom margin is the negative value of the footer's height */
+    min-height: 100%;
+    margin: 0 auto -50px; //the bottom margin is the negative value of the footer's height 
+
+    &:after {
+    content: "";
+    display: block;
+    height: 50px; 
+  }
 }
-.container-fluid:after {
-  content: "";
-  display: block;
-  height: 155px;
-}
+*/
 /*----------------------------------------
 TAG TYPESCRIPT
 ------------------------------------------*/
@@ -284,6 +287,14 @@ TAG ICONS
   height: 64px;
   width: 64px;
   margin: 10px;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+.xp_icon:hover {
+  -webkit-filter: grayscale(50%);
+  -moz-filter: grayscale(50%);
+  filter: grayscale(50%);
 }
 .xp_icon_set {
   text-align: center;
