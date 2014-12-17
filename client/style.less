@@ -111,6 +111,12 @@ TAG NAVBAR
   top: 0;
 }
 
+.nav-mobile {
+  .nav-static;
+  display: none;
+  .fixed;
+}
+
 /*----------------------------------------
 TAG SEPARATORS
 ------------------------------------------*/
@@ -167,7 +173,7 @@ TAG HOME PAGE
 
 #experience {
   height: 100%;
-  //min-height: 900px;
+  min-height: 550px;
   background-image: url("assets/images/promo2.jpg");
   background-position: center;
   background-size: cover;
@@ -206,6 +212,10 @@ TAG HOME PAGE
       color: #e67e22;
     }
 
+    i {
+      font-size: 5em;
+    }
+
   }
 
   .bigSocial i:hover {
@@ -227,7 +237,7 @@ TAG HOME PAGE
 
 #contact {
   height: 100%;
-  min-height: 500px;
+  min-height: 575px;
   background-image: url("assets/images/promo3.jpeg");
   background-position: center;
   background-size: cover;
@@ -260,6 +270,7 @@ TAG FOOTER JADE
   background-color: rgba(0, 15, 35, 1);
   padding: 10px;
   //height: 50px;
+  min-height: 70px;
 
   .socialMedia {
     display: inline-block;
