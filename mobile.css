@@ -4,9 +4,9 @@
   }
   .nav-mobile {
     display: block;
-    font-size: 1em;
+    font-size: 1.2em;
     text-align: center;
-    height: 30px;
+    height: 40px;
   }
   .nav-mobile a {
     color: white;
