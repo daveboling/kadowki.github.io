@@ -88,12 +88,14 @@
 @media (max-width: 960px) {
   .featureOne,
   .featureTwo,
-  .featureThree {
+  .featureThree,
+  .featureFour {
     height: 715px;
   }
   .featureOne .photo .photoItem,
   .featureTwo .photo .photoItem,
-  .featureThree .photo .photoItem {
+  .featureThree .photo .photoItem,
+  .featureFour .photo .photoItem {
     height: 70px;
     width: 120px;
   }
