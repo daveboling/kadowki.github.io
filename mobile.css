@@ -29,35 +29,41 @@
   }
   .featureOne,
   .featureTwo,
-  .featureThree {
+  .featureThree,
+  .featureFour {
     height: 715px;
   }
   .featureOne .photo .photoItem,
   .featureTwo .photo .photoItem,
-  .featureThree .photo .photoItem {
+  .featureThree .photo .photoItem,
+  .featureFour .photo .photoItem {
     height: 70px;
     width: 120px;
   }
   .featureOne .title,
   .featureTwo .title,
-  .featureThree .title {
+  .featureThree .title,
+  .featureFour .title {
     text-align: center;
     font-size: 1.5em;
   }
   .featureOne .sHeader1,
   .featureTwo .sHeader1,
-  .featureThree .sHeader1 {
+  .featureThree .sHeader1,
+  .featureFour .sHeader1 {
     font-size: 1.2em;
   }
   .featureOne .weblinks a,
   .featureTwo .weblinks a,
-  .featureThree .weblinks a {
+  .featureThree .weblinks a,
+  .featureFour .weblinks a {
     font-size: 1em;
     margin-left: 2px;
   }
   .featureOne .description,
   .featureTwo .description,
-  .featureThree .description {
+  .featureThree .description,
+  .featureFour .description {
     font-size: 1.2em;
   }
   #copyright {
@@ -68,10 +74,10 @@
   }
   /*
   .container-fluid {
-      margin: 0 auto -75px; //the bottom margin is the negative value of the footer's height 
+      margin: 0 auto -75px; //the bottom margin is the negative value of the footer's height
 
       &:after {
-      height: 75px; 
+      height: 75px;
     }
   }
 */
@@ -79,10 +85,7 @@
     width: 100%;
   }
 }
-@media (max-width: 840px) {
-  #experience {
-    min-height: 850px;
-  }
+@media (max-width: 960px) {
   .featureOne,
   .featureTwo,
   .featureThree {

@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Oswald:400,700);
 /*
-  Copyright 2014 David D. Boling 
+  Copyright 2014 David D. Boling
   100% Home grown!
 */
 @font-face {
@@ -161,7 +161,7 @@ TAG HOME PAGE
 }
 #experience {
   height: 100%;
-  min-height: 550px;
+  min-height: 850px;
   background-image: url("assets/images/promo2.jpg");
   background-position: center;
   background-size: cover;
@@ -273,12 +273,12 @@ TAG FOOTER JADE
 /*
 .container-fluid {
     min-height: 100%;
-    margin: 0 auto -50px; //the bottom margin is the negative value of the footer's height 
+    margin: 0 auto -50px; //the bottom margin is the negative value of the footer's height
 
     &:after {
     content: "";
     display: block;
-    height: 50px; 
+    height: 50px;
   }
 }
 */
@@ -392,7 +392,8 @@ TAG FEATURED PROJECTS
 ------------------------------------------*/
 .featureOne,
 .featureTwo,
-.featureThree {
+.featureThree,
+.featureFour {
   height: 805px;
   background-image: url("assets/images/promo1.jpg");
   background-position: top;
@@ -407,14 +408,16 @@ TAG FEATURED PROJECTS
 }
 .featureOne .photo,
 .featureTwo .photo,
-.featureThree .photo {
+.featureThree .photo,
+.featureFour .photo {
   height: 300px;
   text-align: center;
   margin-bottom: 15px;
 }
 .featureOne .photo .photoItem,
 .featureTwo .photo .photoItem,
-.featureThree .photo .photoItem {
+.featureThree .photo .photoItem,
+.featureFour .photo .photoItem {
   height: 200px;
   width: 270px;
   margin-right: 10px;
@@ -425,19 +428,22 @@ TAG FEATURED PROJECTS
 }
 .featureOne .photo .photoItem:hover,
 .featureTwo .photo .photoItem:hover,
-.featureThree .photo .photoItem:hover {
+.featureThree .photo .photoItem:hover,
+.featureFour .photo .photoItem:hover {
   transition: 0.2s;
   border: 3px solid rgba(255, 255, 255, 0.6);
 }
 .featureOne .title,
 .featureTwo .title,
-.featureThree .title {
+.featureThree .title,
+.featureFour .title {
   text-align: center;
   font-size: 1.5em;
 }
 .featureOne .sHeader1,
 .featureTwo .sHeader1,
-.featureThree .sHeader1 {
+.featureThree .sHeader1,
+.featureFour .sHeader1 {
   font-size: 2.5em;
   text-align: center;
   -webkit-stroke-width: 5.3px;
@@ -454,19 +460,22 @@ TAG FEATURED PROJECTS
 }
 .featureOne .sHeader2,
 .featureTwo .sHeader2,
-.featureThree .sHeader2 {
+.featureThree .sHeader2,
+.featureFour .sHeader2 {
   font-size: 1.8em;
 }
 .featureOne .weblinks,
 .featureTwo .weblinks,
-.featureThree .weblinks {
+.featureThree .weblinks,
+.featureFour .weblinks {
   text-align: center;
   margin: 0;
   padding: 0;
 }
 .featureOne .weblinks a,
 .featureTwo .weblinks a,
-.featureThree .weblinks a {
+.featureThree .weblinks a,
+.featureFour .weblinks a {
   text-decoration: none;
   color: white;
   padding-right: 10px;
@@ -476,20 +485,23 @@ TAG FEATURED PROJECTS
 }
 .featureOne .weblinks a:hover,
 .featureTwo .weblinks a:hover,
-.featureThree .weblinks a:hover {
+.featureThree .weblinks a:hover,
+.featureFour .weblinks a:hover {
   transition: 0.30s;
   color: #ff9800;
 }
 .featureOne .description,
 .featureTwo .description,
-.featureThree .description {
+.featureThree .description,
+.featureFour .description {
   font-size: 1.5em;
   padding: 30px;
   margin-bottom: 10px;
 }
 .featureOne .backdrop,
 .featureTwo .backdrop,
-.featureThree .backdrop {
+.featureThree .backdrop,
+.featureFour .backdrop {
   background-color: black;
 }
 .featureOne {
@@ -501,4 +513,7 @@ TAG FEATURED PROJECTS
 }
 .featureThree {
   background-image: url("assets/images/hipsterbay/hip.png");
+}
+.featureFour {
+  background-image: url("assets/images/teamstream/background.png");
 }
