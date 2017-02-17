@@ -2,37 +2,21 @@ doctype html
 html(lang="en" ng-app='dave')
 head
   meta(charset="UTF-8")
-  title David D. Boling
+  title David D. Boling - Full Stack Developer
   meta(charset='UTF-8')
   meta(name='viewport', content='width=device-width, initial-scale=1')
   link(rel="stylesheet", href="bower_components/bootstrap/dist/css/bootstrap.min.css")
   link(rel="stylesheet", href="bower_components/fontawesome/css/font-awesome.css")
-  link(rel='stylesheet', href='bower_components/slicknav/slicknav.css')
-  link(rel='stylesheet', href='bower_components/lightbox/css/lightbox.css')
-  link(rel='stylesheet', href='bower_components/alertify.js/themes/alertify.core.css')
-  link(rel='stylesheet', href='bower_components/alertify.js/themes/alertify.default.css')
   link(rel="stylesheet", href="style.css")
   link(rel="stylesheet", href="mobile.css")
-//Fixed Nav Bar
-include nav.jade
-body(ng-controller='IndexCtrl')
-  //All content and ng-views
+body
   .container-fluid.page-wrap(ng-view)
 
-//Project Dependencies
 script(src='bower_components/angular/angular.js')
 script(src='bower_components/angular-route/angular-route.min.js')
-script(src='bower_components/jquery/dist/jquery.min.js')
-script(src='bower_components/slicknav/jquery.slicknav.min.js')
-script(src='bower_components/lightbox/js/lightbox.min.js')
-script(src='bower_components/bootstrap/dist/js/bootstrap.min.js')
-script(src='bower_components/alertify.js/lib/alertify.min.js')
 
-//Custom JavaScript
 script(src='assets/js/app.js')
 
-//Angular Files
 script(src='index.js')
-script(src='home/home.js')
 
 

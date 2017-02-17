@@ -12,19 +12,6 @@ module.exports = function(grunt){
       }
     },
     // ---------------------------------------------------------------------- //
-    jshint: {
-      options: {jshintrc: '.jshintrc', reporter: require('jshint-stylish')},
-      all: ['Gruntfile.js', 'client/**/*.js']
-    },
-    // ---------------------------------------------------------------------- //
-    jscs: {
-      src: '<%= jshint.all %>',
-      options: {
-        config: '.jscsrc',
-        reporter: 'console'
-      }
-    },
-    // ---------------------------------------------------------------------- //
     jade: {
       build: {
         files: [{
@@ -92,6 +79,6 @@ module.exports = function(grunt){
   grunt.loadNpmTasks('grunt-shell');
 
   grunt.registerTask('deploy', ['clean', 'build', 'shell:bower']);
-  grunt.registerTask('build', ['jshint:all', 'jscs', 'jade', 'less', 'copy:js', 'copy:assets', 'copy:favicon']);
+  grunt.registerTask('build', ['jade', 'less', 'copy:js', 'copy:assets', 'copy:favicon']);
   grunt.registerTask('default', ['build', 'watch']);
 };
